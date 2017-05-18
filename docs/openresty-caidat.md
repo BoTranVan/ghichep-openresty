@@ -28,7 +28,8 @@
 	- ##### Thêm *openresty* repository tới OS để có thể cài đặt các gói cài đặt khác và nhận update trong tương lai.
 
 		+ Tạo một file */etc/yum.repos.d/OpenResty.repo*
-				# touch /etc/yum.repos.d/OpenResty.repo
+		
+			# touch /etc/yum.repos.d/OpenResty.repo
 
 		+ Thêm nội dung sau vào file sau đó lưu lại:
 
@@ -42,6 +43,7 @@
 				enabled_metadata=1
 
 		- Thực hiện cấu hình proxy để tăng tốc độ download cho cài đặt:
+		
 				# echo "proxy=http://123.30.178.220:3142" >> /etc/yum.conf
 				
 		+ Cài đặt *openresy* bằng cách chạy câu lệnh
@@ -85,6 +87,7 @@
 			# opm search	package's_name
 
 		ví dụ:
+		
 			# opm search	lua-resty-cookie
 			p0pr0ck5/lua-resty-cookie		Lua library for HTTP cookie manipulations for OpenResty/ngx_lua
 
